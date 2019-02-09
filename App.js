@@ -1,23 +1,9 @@
 import React, { Component } from 'react';
-import { View, StyleSheet } from 'react-native';
 
-import Article from './src/components/Article';
+import News from './src/components/News';
 
 export default class App extends Component {
 	render() {
-		return (
-			<View style={styles.container}>
-				<Article />
-			</View>
-		);
+		return <News />;
 	}
 }
-
-const styles = StyleSheet.create({
-	container: {
-		flex: 1,
-		justifyContent: 'center',
-		alignItems: 'center',
-		backgroundColor: '#fff'
-	}
-});
